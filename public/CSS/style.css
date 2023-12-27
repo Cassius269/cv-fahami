@@ -1,5 +1,48 @@
 @charset "UTF-8";
+/* importation des variables */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 90vh;
+}
+
+.sectionLangages_div {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 1rem;
+  width: 250px;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+h1 {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.portrait {
+  height: 200px;
+  display: block;
+  margin: auto;
+}
+
+#main_divParent_portraitTitre {
+  background-color: orange;
+  padding-top: 1rem;
+}
+
 /* importation des placeholders */
+html body main #langages, html body main #realisations, html body main #presentation {
+  padding-top: 1.5rem;
+}
+
+html body main #langages h2, html body main #langages label, html body main #langages progress, html body main #realisations h2, html body main #realisations ul, html body main #presentation h2, html body main #presentation p {
+  margin-left: 1rem;
+}
+
 /* Réinitilisation du document HTML */
 * {
   margin: 0;
@@ -11,11 +54,33 @@
 html {
   font-size: 12px;
 }
-html body {
-  background: grey;
-}
 html body header {
-  background-color: yellow;
+  background-color: black;
+  padding: 1.5rem;
+}
+html body header img {
+  background: white;
+  padding: 0.5rem;
+  border-radius: 5rem;
+  width: 30px;
+  margin: 0.2rem;
+}
+html body header a {
+  color: white;
+  position: relative;
+  bottom: 1rem;
+}
+html body main #presentation {
+  background: white;
+}
+html body main #realisations {
+  background-color: red;
+}
+html body main #realisations ul {
+  list-style-type: none;
+}
+html body main #langages {
+  background: orange;
 }
 
 /*# sourceMappingURL=style.css.map */

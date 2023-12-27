@@ -1,5 +1,16 @@
+
+/* importation des variables */
+@import "./partiels/variables";
+@import "./partiels/mise_en_page_globale";
+@import "./partiels/mise_en_page_langages";
+@import "./partiels/titre";
+@import "./partiels/portrait";
+
 /* importation des placeholders */
-@import "./centrer_element";
+@import "./placeholders/centrer_element";
+@import "./placeholders/padding_top";
+@import "./placeholders/margin_left";
+
 
 /* Réinitilisation du document HTML */
 
@@ -12,11 +23,48 @@
 
 
 html{
-    font-size: 12px;
+    font-size: $taille_font;
     body{
-        background: grey;
         header{
-            background-color: yellow;
+            background-color: black;
+            padding: 1.5rem;
+            img{
+                background: white;
+                padding: 0.5rem;
+                border-radius: 5rem;
+                width: 30px;
+                margin: 0.2rem;
+            }
+            a{
+                color:white;
+                position: relative;
+                bottom: 1rem;
+            }
         }
+        main{
+            #presentation{
+                background: white;
+                @extend %padding_top;
+                h2,p{
+                    @extend %margin_left;
+                }
+            }
+            #realisations{
+                background-color: red;
+                @extend %padding_top;
+                h2,ul{
+                    @extend %margin_left;
+                }
+                ul{
+                    list-style-type: none;
+                }
+            }
+            #langages{
+                background: orange;
+                @extend %padding_top;
+                h2,label,progress{
+                    @extend %margin_left;
+                }
+            }
         }
-    }
+    }}

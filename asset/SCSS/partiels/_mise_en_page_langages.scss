@@ -1,0 +1,9 @@
+.sectionLangages_div{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+    width: 250px;
+    padding: 1rem;
+    margin-left: 1rem;
+}
