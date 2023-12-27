@@ -5,8 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="CV en ligne de Fahami avec ses coordonnées, les langages maîtrisés et ses réalisations.">
     <title>CV en ligne de Fahami</title>
+    <link href="../public/CSS/style.css" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <img src="../asset/images/phone.svg" alt="icône représentant un téléphone">
+                    <a href="tel:0756946532">0756946532</a>
+                </li>
+                <li>
+                    <img src="../asset/images/email.svg" alt="icône représentant une enveloppe">
+                    <a href="mailto: fahamygaston@gmail.com" target="_blank"> fahamygaston@gmail.com </a>
+                </li>
+                <li>
+                    <img src="../asset/images/home.svg" alt="icône représentant un domicile">
+                    <a href="https://www.google.com/maps/place/Lyon/@45.7549743,4.8071097,12.42z/data=!4m6!3m5!1s0x47f4ea516ae88797:0x408ab2ae4bb21f0!8m2!3d45.764043!4d4.835659!16zL20vMGRwcmc?entry=ttu" target="_blank">Région lyonnaise</a>
+                </li>
+            </ul>
+        </nav>       
+    </header>
+    <main>
+        <img src="../asset/images/Portrait.jpg" alt="Portrait représentant l'auteur du CV en ligne" width="100px">
+        <h1>Fahami <br>MOHAMED ALI</h1>
+
+        <section id="presentation">
+            <h2>Présentation</h2>
+            <p> D’un naturel ambitieux, créatif et avec un niveau intermédiaire en HTML/CSS et Javascript, je souhaite vous faire part de ma candidature pour intégrer votre entreprise en alternance pour préparer mon titre professionel en developpement web et web mobile.
+
+                J'ai eu l'honneur d'être introduit au développement et conception web par le programme La Toile de l'emlyon.
+                J'ai pu sortir certifié de la formation. Aujourd'hui j'ambitionne de continuer dans ce domaine du developpement web afin d'obtenir le titre de développeur web et web mobile.
+            </p>
+        </section>
+
+        <section id="realisations">
+            <h2>Réalisations</h2>
+            <ul>
+                <li><a href="https://siterelieurversion2.glitch.me/index.html" target="_blank">Site d’artisan relieur</a> réalisé à la Toile pour un assigment</li>
+                <li><a href="https://portfoliophotographefahami.glitch.me/" title="lien vers le projet de portfolio photo" target="_blank">Site de mon portfolio photo</a>réalisé en dehors des cours (en cours de construction)</li>
+                <li><a href="https://jeufahami.glitch.me/" title="lien vers le jeu développé en Js" target="_blank">Jeu développé</a> sur mon temps libre pendant la formation à la Toile à l’aide
+                    des langages HTML/CSS et Javascript
+                </li>
+            </ul>
+        </section>
+
+        <section id="langages">
+            <h2>Langages</h2>
+            <label for="html">HTML</label>
+            <progress id="html" max="100" value="90">90%</progress>
+
+            <label for="css">CSS</label>
+            <progress id="css" max="100" value="90">90%</progress>
+
+            <label for="sass">SASS</label>
+            <progress id="sass" max="100" value="65">65%</progress>
+
+            <label for="javascript">Javascript</label>
+            <progress id="javascript" max="100" value="70">70%</progress> 
+            
+            <label for="node_js">Node Js</label>
+            <progress id="node_js" max="100" value="60">60%</progress> 
+
+            <label for="sql">SQL</label>
+            <progress id="sql" max="100" value="60">60%</progress> 
+        </section>
+    </main>
+    <footer>
+        <img src="../asset/images/copyright.svg" alt="icône représentant le copyright">
+        <p>Tous droits réservés.</p>
+    </footer>
 </body>
 </html>

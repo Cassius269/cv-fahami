@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* importation des placeholders */
+/* Réinitilisation du document HTML */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+html body {
+  background: grey;
+}
+html body header {
+  background-color: yellow;
+}
+
+/*# sourceMappingURL=style.css.map */

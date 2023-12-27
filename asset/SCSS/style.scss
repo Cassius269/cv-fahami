@@ -1,0 +1,22 @@
+/* importation des placeholders */
+@import "./centrer_element";
+
+/* Réinitilisation du document HTML */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 12px;
+    body{
+        background: grey;
+        header{
+            background-color: yellow;
+        }
+        }
+    }
