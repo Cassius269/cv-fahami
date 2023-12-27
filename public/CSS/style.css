@@ -39,7 +39,7 @@ html body main #langages, html body main #realisations, html body main #presenta
   padding-top: 1.5rem;
 }
 
-html body main #langages h2, html body main #langages label, html body main #langages progress, html body main #realisations h2, html body main #realisations ul, html body main #presentation h2, html body main #presentation p {
+html body main #langages h2, html body main #langages label, html body main #langages progress, html body main #realisations h2, html body main #realisations h3, html body main #realisations ul, html body main #presentation h2, html body main #presentation p {
   margin-left: 1rem;
 }
 
