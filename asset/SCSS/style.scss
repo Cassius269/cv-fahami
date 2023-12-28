@@ -1,15 +1,18 @@
+/* importation des mixins */
+@import "./mixins/centrer_element";
 
-/* importation des variables */
+/* importation des partiels */
 @import "./partiels/variables";
 @import "./partiels/mise_en_page_globale";
 @import "./partiels/mise_en_page_langages";
 @import "./partiels/titre";
 @import "./partiels/portrait";
+@import "./partiels/footer";
 
-/* importation des placeholders */
-@import "./placeholders/centrer_element";
-@import "./placeholders/padding_top";
-@import "./placeholders/margin_left";
+/* importation des placeholders, également appelés extensions*/
+@import "./placeholders_extensions/centrer_element";
+@import "./placeholders_extensions/padding_top";
+@import "./placeholders_extensions/margin_left";
 
 
 /* Réinitilisation du document HTML */

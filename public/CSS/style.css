@@ -1,10 +1,12 @@
 @charset "UTF-8";
-/* importation des variables */
+/* importation des mixins */
+/* Création d'une mixin sans arguments car l'extension ne marche pas 
+pour centrer les élements ayant une media query */
+/* importation des partiels */
 main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  height: 90vh;
+  grid-template-rows: 1fr 210px 170px 1fr;
 }
 
 .sectionLangages_div {
@@ -23,6 +25,14 @@ h1 {
   margin-bottom: 1rem;
 }
 
+h2 {
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin-bottom: 0.4rem;
+}
+
 .portrait {
   height: 200px;
   display: block;
@@ -34,7 +44,39 @@ h1 {
   padding-top: 1rem;
 }
 
-/* importation des placeholders */
+/* Mobile first */
+@media screen and (min-width: 375px) {
+  footer {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer img {
+    background-color: white;
+    border-radius: 5rem;
+    margin-right: 2rem;
+  }
+}
+/* écrans tablettes */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  footer {
+    padding: 1rem;
+  }
+}
+/* écrans supérieurs aux tablettes */
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 2rem;
+    font-size: 2rem;
+  }
+  footer img {
+    height: 35px;
+  }
+}
+/* importation des placeholders, également appelés extensions*/
 html body main #langages, html body main #realisations, html body main #presentation {
   padding-top: 1.5rem;
 }

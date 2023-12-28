@@ -1,0 +1,8 @@
+/* Création d'une mixin sans arguments car l'extension ne marche pas 
+pour centrer les élements ayant une media query */
+
+@mixin centrer_element(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
