@@ -28,6 +28,7 @@
 html{
     font-size: $taille_font;
     body{
+        background-color: $couleur_primaire;
         header{
             background-color: black;
             padding: 1.5rem;
@@ -45,8 +46,12 @@ html{
             }
         }
         main{
+            h1{
+                background-color: orange;
+            }
             #presentation{
                 background: white;
+                border-top: 1px solid black;
                 @extend %padding_top;
                 h2,p{
                     @extend %margin_left;
