@@ -43,6 +43,10 @@ html{
                 color:white;
                 position: relative;
                 bottom: 1rem;
+                text-decoration: none;
+                &:hover{
+                    color:rgb(255, 208, 0);
+                }
             }
         }
         main{

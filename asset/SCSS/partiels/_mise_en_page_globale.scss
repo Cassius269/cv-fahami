@@ -3,10 +3,13 @@
     main{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 56px 210px 170px 1fr;
+        grid-template-rows: 56px 200px 1fr 1fr;
         .portrait{
             display: block;
             margin: auto;
+        }
+        #presentation{
+            padding-bottom: 4rem;
         }
     }   
 }
@@ -15,6 +18,15 @@
 /* écrans supérieurs aux tablettes */
 
 @media  screen and (min-width:768px){
+    header{
+       ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+       }
+       font-size: 1.3rem;
+       height: 6rem;
+    }
     main{
         display: grid;
         grid-template-columns: 1fr 1fr;
